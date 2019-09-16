@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PayPal Credit Card Checkout Form</title>
+    <link href="main.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="card-checkout">
+        <header class="card-checkout__header">Thank you for choosing to subscribe to PDFfiller services!</header>
+
+        <form class="card-checkout__form">
+
+            <div class="card-checkout__table">
+                <div class="card-checkout__cardholder-name-row">
+                    <div class="card-checkout__cardholder-name-data-cell">
+                        <label class="card-checkout__cardholder-name">Cardhoder Name
+                            <input type="text" class="card-checkout__cardholder-first-name" placeholder="First Name" required>
+                        </label>
+                    </div>
+                    <div class="card-checkout__cardholder-last-name-column">
+                        <input type="text" class="card-checkout__cardholder-last-name" placeholder="Last Name" required>
+                    </div>
+                </div>
+
+                <div class="card-checkout__cardholder-number-row">
+                    <td class="card-checkout__card-number-wrapper">
+                        <label class="card-checkout__card-number-label">Card Number
+                            <input type="number" class="card-checkout__card-number" minlength="16" maxlength="16"
+                                   placeholder="⦁⦁⦁⦁ ⦁⦁⦁⦁ ⦁⦁⦁⦁ ⦁⦁⦁⦁" required>
+                        </label>
+                    </td>
+                </div>
+
+                <div class="card-checkout__card-types-row">
+<!--                    <div class="card-checkout__card-types">-->
+                        <img class="card-checkout__visa-card" src="./src/img/visa.png"
+                             alt="visa card are illustrated" width="36.12" height="27">
+                        <img class="card-checkout__masterCard" src="./src/img/masterCard.png"
+                             alt="MasterCard are illustrated" width="36.12" height="27">
+                        <img class="card-checkout__discover-card" src="./src/img/Discover-dark.png"
+                             alt="Discover card are illustrated" width="36.12" height="27">
+                        <img class="card-checkout__AmericanExpress-card" src="./src/img/AmericanExpress-dark.png"
+                             alt="AmericanExpress card are illustrated"  width="36.12" height="27">
+<!--                    </div>-->
+                </div>
+
+                <div class="card-checkout__exp-date">
+<!--                        <fieldset class="fieldset-expiration">-->
+<!--                            <label for="card-expiration-month">Expiration date</label>-->
+<!--                            <div class="select">-->
+<!--                                <select id="card-expiration-month" placeholder="XXX">-->
+<!--                                    <option></option>-->
+<!--                                    <option>01</option>-->
+<!--                                    <option>02</option>-->
+<!--                                    <option>03</option>-->
+<!--                                    <option>04</option>-->
+<!--                                    <option>05</option>-->
+<!--                                    <option>06</option>-->
+<!--                                    <option>07</option>-->
+<!--                                    <option>08</option>-->
+<!--                                    <option>09</option>-->
+<!--                                    <option>10</option>-->
+<!--                                    <option>11</option>-->
+<!--                                    <option>12</option>-->
+<!--                                </select>-->
+<!--                            </div>-->
+<!--                            <div class="select">-->
+<!--                                <select id="card-expiration-year">-->
+<!--                                    <option></option>-->
+<!--                                    <option>2016</option>-->
+<!--                                    <option>2017</option>-->
+<!--                                    <option>2018</option>-->
+<!--                                    <option>2019</option>-->
+<!--                                    <option>2020</option>-->
+<!--                                    <option>2021</option>-->
+<!--                                    <option>2022</option>-->
+<!--                                    <option>2023</option>-->
+<!--                                    <option>2024</option>-->
+<!--                                    <option>2025</option>-->
+<!--                                </select>-->
+<!--                            </div>-->
+<!--                        </fieldset>-->
+
+<!--                        <fieldset class="fieldset-ccv">-->
+<!--                            <label for="card-ccv">CCV</label>-->
+<!--                            <input type="text" id="card-ccv" maxlength="3" />-->
+<!--                        </fieldset>-->
+
+
+                        <label class="card-checkout__exp-date-label">Exp. Date
+                            <input type="number" class="card-checkout__exp-month-input" placeholder="MM"
+                                   minlength="2" maxlength="2" min="1" max="12" required>
+                        </label>
+                        <label class="card-checkout__exp-date-label-year">/
+                            <input type="number" class="card-checkout__exp-year-input" placeholder="YYYY"
+                                   minlength="4" maxlength="4" min="2019" max="2030" required>
+                        </label>
+                    </div>
+                    <div class="card-checkout__cvv">
+                        <label class="card-checkout__cvv-label">CVV/CVC
+                            <input type="number" class="card-checkout__ccv-input" placeholder="01001"
+                                   minlength="3" maxlength="4" required>
+                        </label>
+                    </div>
+
+                     <div class="card-checkout__zip">
+                         <label class="card-checkout__zip-label">Zip/Postal Code
+                            <input class="card-checkout__zip-input" type="number" placeholder="01001" required>
+                         </label>
+                    </div>
+
+                </div>
+
+
+             <div class="card-checkout__paypal-option">
+                <div class="paypal-pay__wrapper">
+                 <h3 class="paypal-pay__title">Or pay with Paypal</h3>
+                 <a class="paypal-pay" href="https://www.paypal.com/ru/signin">
+                     <img class="paypal-pay__logo" src="./src/img/PayPal.svg" alt="button in order to pay with Paypal">
+                 </a>
+                </div>
+            </div>
+
+            <div class="card-checkout__subscription subscription-start__wrapper">
+                <button class="subscription-start" type="submit">
+                    Start My Subscription for $19.99/mo.
+                </button>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
