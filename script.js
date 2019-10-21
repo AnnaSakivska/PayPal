@@ -21,6 +21,7 @@ form.addEventListener('submit', (event) => {
 
 // Credit card type validation by number
 // https://stackoverflow.com/questions/72768/how-do-you-detect-credit-card-type-based-on-number
+//https://www.youtube.com/watch?v=nzHUbbK9izY&t=152s
 
 function getCreditNumber() {
     return document.getElementById('creditNumber').value;
