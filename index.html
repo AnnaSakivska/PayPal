@@ -5,30 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PayPal Credit Card Checkout Form</title>
     <link href="main.css" rel="stylesheet">
+    <script defer src="script.js"></script>
 </head>
 <body>
 
     <div class="card-checkout">
         <header class="card-checkout__header">Thank you for choosing to subscribe to PDFfiller services!</header>
 
-        <form class="card-checkout__form">
+        <form class="card-checkout__form" action="/" method="GET" name="test" id="form">
 
             <div class="card-checkout__table">
                 <div class="card-checkout__cardholder-name-row">
                     <div class="card-checkout__cardholder-name-data-cell">
                         <label class="card-checkout__cardholder-name">Cardhoder Name
-                            <input type="text" class="card-checkout__cardholder-first-name" placeholder="First Name" required>
+                            <input type="text" class="card-checkout__cardholder-first-name" name="firstName" placeholder="First Name" required>
                         </label>
                     </div>
                     <div class="card-checkout__cardholder-last-name-column">
-                        <input type="text" class="card-checkout__cardholder-last-name" placeholder="Last Name" required>
+                        <input type="text" class="card-checkout__cardholder-last-name" name="lastName" placeholder="Last Name" required>
                     </div>
                 </div>
 
                 <div class="card-checkout__cardholder-number-row">
                     <td class="card-checkout__card-number-wrapper">
                         <label class="card-checkout__card-number-label">Card Number
-                            <input type="number" class="card-checkout__card-number" minlength="16" maxlength="16"
+                            <input type="number" id="credit-number" class="card-checkout__card-number" minlength="16" maxlength="16"
                                    placeholder="⦁⦁⦁⦁ ⦁⦁⦁⦁ ⦁⦁⦁⦁ ⦁⦁⦁⦁" required>
                         </label>
                     </td>
@@ -125,7 +126,7 @@
             </div>
 
             <div class="card-checkout__subscription subscription-start__wrapper">
-                <button class="subscription-start" type="submit">
+                <button class="subscription-start" type="submit" id="submitBtn" onclick="valid(document.getElementById('form'))">
                     Start My Subscription for $19.99/mo.
                 </button>
             </div>
